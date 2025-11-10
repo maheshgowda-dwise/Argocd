@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: be-apps
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/dWise-Healthcare-IT-Solutions-Pvt-Ltd/LT-QA-K8s-Stack.git'
+    targetRevision: HEAD
+    path: LT-QA/BE-Projects/BE-Canary-Helm-Unified
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: v2qa
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: tru

@@ -1,0 +1,17 @@
+# values.yaml
+
+service:
+  name: appointment
+  image: maheshgowdamg25/lt-be-apnt-service:v2qa-202511061818-fae0a5c
+  port: 8080
+  type: NodePort
+
+resources:
+  limits:
+    memory: 1200Mi
+    cpu: 200m
+  requests:
+    memory: 1100Mi
+    cpu: 100m
+
+replicaCount: 1

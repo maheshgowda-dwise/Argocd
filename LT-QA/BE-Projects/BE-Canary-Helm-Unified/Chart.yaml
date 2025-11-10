@@ -1,0 +1,6 @@
+apiVersion: v2
+name: canary-dev-be-microservices
+description: Unified Helm chart for Lifetrenz microservices
+type: application
+version: 0.2.0
+appVersion: "1.0"
