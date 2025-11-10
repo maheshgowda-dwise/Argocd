@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/dWise-Healthcare-IT-Solutions-Pvt-Ltd/LT-QA-K8s-Stack.git'
+    repoURL: 'https://github.com/maheshgowda-dwise/Argocd.git'
     targetRevision: HEAD
     path: LT-QA/BE-Projects/BE-Canary-Helm-Unified
     helm:
