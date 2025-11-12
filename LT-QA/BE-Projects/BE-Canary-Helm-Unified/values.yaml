@@ -2,7 +2,7 @@
 
 service:
   name: appointment
-  image: maheshgowdamg25/lt-be-apnt-service:v2qa-202511061818-fae0a5c
+  image: 
   port: 8080
   type: NodePort
 
